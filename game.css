@@ -1,0 +1,99 @@
+body{
+   
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+   background-image: url(https://static.vecteezy.com/system/resources/previews/001/879/980/non_2x/playful-tic-tac-toe-free-vector.jpg); 
+}
+h1{
+   text-align: center;
+   margin-top: 5px;
+    font-weight: 1000;
+    font-size:60px;
+    color: #92a8d1
+}
+.container{
+
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    margin-top: 10vh;
+    justify-content: center;
+}
+.box {
+    border: 1px solid   #92a8d1 ;
+    min-width: 80px;
+    min-height: 65px;
+    margin:auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+}
+.box:hover{
+    background-color:#bac1cead ;
+}
+
+div:nth-child(1),
+div:nth-child(2),
+div:nth-child(3){
+    border-top-style: hidden;
+}
+div:nth-child(3),
+div:nth-child(6),
+div:nth-child(9){
+    border-right-style:hidden;
+}
+
+div:nth-child(1),
+div:nth-child(4),
+div:nth-child(7){
+    border-left-style: hidden;
+}
+
+div:nth-child(7),
+div:nth-child(8),
+div:nth-child(9){
+    border-bottom-style: hidden;
+}
+@media (max-width:400px){
+    body{
+        position: fixed;
+    }
+}
+
+.gameheading{
+    text-align: center;
+    color: #f5d9d5;
+    font-size:1.5em;
+    font-weight: 800;   
+}
+@media(min-width:300px){
+    h1{
+        padding-left: 20px;
+        padding-right: 15px;
+    }
+}
+  button{
+   padding:10px 15px 10px 15px;
+   border-radius: 10%;
+   font-family: 'Montserrat', sans-serif;
+   color: white;
+   background-color: #3b3a30;  
+   font-size: large;
+   box-shadow: 5px 5px 2px 1px rgba(0, 0, 255, .2);
+   cursor: pointer;
+}
+.button{
+
+    text-align: center;
+    display:flex;
+    height: 23vh;
+    align-items: center;
+    justify-content: center;
+} 
+ .boxtext{
+   
+    font-size: 2em;
+    font-weight: 1000;
+    color: #f5d9d5;
+} 
+
